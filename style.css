@@ -1,0 +1,97 @@
+#hmain
+{text-align:center;/*Baad mein 20em kar dena*/
+ margin-top: 0px;
+ font-size: 6em;
+font-family:Arial, Helvetica, sans-serif;
+color:RGB(0,45,196);
+font-style: normal;
+font-weight: bold;
+text-decoration: underline;
+outline-style: hidden;}
+.main
+{
+    background-image: url('./photos/agp.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;   
+}
+#img1
+{
+    margin:1em;
+    clip-path: circle(40%);
+}
+.button{
+  background-color:RGB(73,128,221);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 20px;
+  margin-bottom: 18px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid black;
+  color: black;
+  position: relative;
+  left:600px;
+  border-radius: 6px;
+}
+.button:hover {
+    background-color:RGB(73,157,207);
+    color: white;
+}
+.sub{
+    color:RGB(248,75,108);
+    font-style: italic;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+.prg{
+    font-size: 28px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left:30px ;
+    margin-right:10em ;
+    line-height: 150%;
+}
+.over{
+    border: hidden;
+    display: inline-block;
+    overflow: auto;
+    margin-right: 2em;
+}
+th{background-color: rgb(230, 129, 248);
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 2em;
+  text-align: center; 
+  padding-top: 8px ;
+  padding-bottom: 4px;
+  
+}
+td{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    text-align: center; 
+    padding-top: 7px ;
+    padding-bottom: 4px;
+  }
+  table {
+    width: 30%;
+    margin-left: 190px;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 4px solid black;
+  }
+  .im{
+      text-align: right;
+      float: right;
+      width:20%;
+      object-fit: cover;
+      border: 3px solid black;
+  }  
