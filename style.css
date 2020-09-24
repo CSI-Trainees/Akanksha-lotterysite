@@ -1,13 +1,14 @@
 #hmain
-{text-align:center;/*Baad mein 20em kar dena*/
- margin-top: 0px;
+{text-align:right;
+ margin-top: -55px;
  font-size: 6em;
-font-family:Arial, Helvetica, sans-serif;
-color:RGB(0,45,196);
-font-style: normal;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color:RGB(255,96,45);
+font-style: oblique;
 font-weight: bold;
 text-decoration: underline;
-outline-style: hidden;}
+letter-spacing: 0.1em;
+/*outline-style: hidden;*/}
 .main
 {
     background-image: url('./photos/agp.jpg');
@@ -21,25 +22,43 @@ outline-style: hidden;}
     clip-path: circle(40%);
 }
 .button{
-  background-color:RGB(73,128,221);
+  background-color:RGB(255,96,45);
   padding: 16px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  /*display: inline-block;*/
   font-size: 16px;
-  margin: 0px 20px;
-  margin-bottom: 18px;
+  margin: 0px 30px;
+  margin-bottom: 26px;
   transition-duration: 0.4s;
   cursor: pointer;
   border: 2px solid black;
   color: black;
   position: relative;
-  left:600px;
+  left:570px;
   border-radius: 6px;
 }
 .button:hover {
-    background-color:RGB(73,157,207);
-    color: white;
+  background-color:RGB(255,129,45);
+  color: white;
+}
+.c
+{
+  background-color:green;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  transition-duration: 0.4s;
+  padding:10px 10px;
+  border: 2px solid black;
+  color: black;
+  margin: 14px 14px;
+  border-radius: 12px;
+}
+.c:hover{
+  background-color:RGB(79,144,18);
+  color: white;
 }
 .sub{
     color:RGB(248,75,108);
@@ -57,6 +76,13 @@ outline-style: hidden;}
     margin-right:10em ;
     line-height: 150%;
 }
+.mb
+{
+  margin-left:400px;
+  display:auto;
+  margin-right: 200px;
+  
+}
 .over{
     border: hidden;
     display: inline-block;
@@ -65,8 +91,9 @@ outline-style: hidden;}
 }
 th{background-color: rgb(230, 129, 248);
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.2px;
   font-size: 2em;
   text-align: center; 
   padding-top: 8px ;
@@ -95,3 +122,44 @@ td{
       object-fit: cover;
       border: 3px solid black;
   }  
+#last
+{
+  background-color:black;
+  
+}
+#lastp
+{
+  font-size: 2em;
+  padding:8px 16px;
+  color:white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-style: oblique;
+  letter-spacing: 0.2em;
+}
+.line{
+  background-color:white;
+  text-align: right;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  transition-duration: 0.4s;
+  padding:10px 10px;
+  border: 2px solid black;
+  color: black;
+  margin: 14px 14px;
+}
+.c1{
+  background-color:grey;
+  text-align: right;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  transition-duration: 0.4s;
+  padding:10px 10px;
+  border: 2px solid black;
+  color: white;
+  margin: 14px 200px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
