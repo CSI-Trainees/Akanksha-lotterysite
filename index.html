@@ -53,52 +53,31 @@
         <h3 class="sub">Try&nbsp&nbspYour&nbsp&nbspLuck</h3>
         <div>
             <p class="prg"><span>Choose a number : &nbsp&nbsp</p>
-            <p class="mb">
-                <button class="c" onclick="myFunction()">11</button>
-                <button class="c" onclick="myFunction()">12</button>
-                <button class="c" onclick="myFunction()">13</button>
-                <button class="c" onclick="myFunction()">14</button>
-                <button class="c" onclick="myFunction()">15</button>
-                <button class="c" onclick="myFunction()">16</button>
-                <button class="c" onclick="myFunction()">17</button>
-                <button class="c" onclick="myFunction()">18</button>
-                <button class="c" onclick="myFunction()">19</button>
-                <button class="c" onclick="myFunction()">20</button>
-                <button class="c" onclick="myFunction()">21</button>
-                <button class="c" onclick="myFunction()">22</button>
-                <button class="c" onclick="myFunction()">23</button>
-                <button class="c" onclick="myFunction()">24</button>
-                <button class="c" onclick="myFunction()">25</button>
-                <button class="c" onclick="myFunction()">26</button>
-                <button class="c" onclick="myFunction()">27</button>
-                <button class="c" onclick="myFunction()">28</button>
-                <button class="c" onclick="myFunction()">29</button>
-                <button class="c" onclick="myFunction()">30</button>
-            </p>
+            <p class="mb">* The lottery number should
+                be between 11 to 30<br><input id="check1" class="line" type="text"><br>
 
+                <button class="c" onclick="myFunction()">Save</button>
+            <p id="d1" style="size:1.5em;color:red;margin-left:400px;"></p>
+            </p>
         </div>
     </div>
 
     <script>
         function myFunction() {
             alert("Your response is successfully recorded");
+            var num1 = document.getElementById("check1").value;
+            var text;
+            if (isNaN(num1) || num1 < 11 || num1 > 30) {
+                text = "Please enter a valid lottery number";
+            }
+            else {
+                text = "OK, result will be announced soon.";
+            }
+            document.getElementById("d1").innerHTML = text;
+            document.getElementById("check").value = document.getElementById("check1").value;
         }
-        /*  function yourFunction() {
-              var x, i;
-              x = document.querySelectorAll(".c");
-              for (i = 0; i < x.length; i++) {
-                  x[i].style.backgroundColor = "grey";
-                  
-              }
-          }
-          function ourFunction() {
-              var x, i;
-              x = document.querySelectorAll(".c");
-              for (i = 0; i < x.length; i++) {
-                  x[i].button.disabled;
-              }
-          }*/
         function Result() {
+           
             var num = document.getElementById("check").value;
             var text;
             if (num == "12") {
@@ -113,13 +92,8 @@
             else {
                 text = "Better Luck Next Time !";
             }
-
-        
-            if (isNaN(num) || num < 11 || num > 30) {
-                text = "Please enter a valid lottery number";
-            }
             document.getElementById("demo").innerHTML = text;
-        }
+            }
     </script>
 
     <div>
@@ -128,7 +102,8 @@
         <p class="prg">Lottery Number : <input id="check" class="line" type="text"><br>
             Code : <input class="line" type="text"></p>
         <button onclick="Result()" class="c1"> Submit </button>
-        <p id="demo" class="prg" style="font-style: italic; color:green; font-weight: 600; font-size: 2em; margin-left: 100px;"></p>
+        <p id="demo" class="prg"
+            style="font-style: italic; color:green; font-weight: 600; font-size: 2em; margin-left: 100px;"></p>
     </div>
 
     <footer>
